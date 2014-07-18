@@ -16,8 +16,8 @@ Repository to model PMTCT.
   * `/transmission_d10.R`
 
 * Contains files with country-specific parameters  
-  * Uganda: `params_uganda_d3.R`
-  * South Africa: `params_za_d2.R`
+  * Uganda: `/params_uganda_d3.R`
+  * South Africa: `/params_za_d2.R`
   
 ### /Development/Uganda_Runs
 * Files and data specific to Uganda 
