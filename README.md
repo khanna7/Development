@@ -1,8 +1,15 @@
 #PMTCT-models-data
 Repository to model PMTCT.
 
+## Statnet packages and versions
+  ```S
+   tergm_3.1.1.tar.gz  
+   ergm_3.1-0.tar.gz  
+   statnet.common_3.1-0.tar.gz  
+   statnet_3.1-0.tar.gz  
+  ```
 
-## Main Directories:
+## Main Directories
 
 ### /Development 
 * Contains the **engine** 
