@@ -30,23 +30,23 @@ Repository to model PMTCT.
 * Example of simulation
 
 #### /Development/Simulation_Graphics 
-* Output: `plot_pdfs.zip`
-    .   Incidence: hiv_incidence_plot.pdf  
-    .   Prevalence: hiv_prevalence_plot.pdf
-    .   Incidence and Viral Suppression vs Coverage: coverage_scenarios_plot.pdf  
-    .   Per cent Virally Suppressed: `viral_suppression_plot.pdf` 
+* Output: `plot_pdfs.zip`  
+       Incidence: `hiv_incidence_plot.pdf`  
+       Prevalence: `hiv_prevalence_plot.pdf`  
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_plot.pdf`    
+       Per cent Virally Suppressed: `viral_suppression_plot.pdf` 
 
-* Data: `data.zip`   
-    .   Incidence: `hiv_prevalence.RData`
-    .   Prevalence: `hiv_incidence.RData`
-    .   Viral Suppression: `viral_suppression.RData`
-    .  Incidence and Viral Suppression vs Coverage: `coverage_scenarios_data.RData`
+* Data: `data.zip`     
+       Incidence: `hiv_prevalence.RData`
+       Prevalence: `hiv_incidence.RData`
+       Viral Suppression: `viral_suppression.RData`
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_data.RData`
 
-* Code: `plotfiles.zip`   
-     .   Incidence: `hiv_prevalence.RData`
-     .  Prevalence: `hiv_prevalence_plot.R`
-     .   Viral Suppression: `viral_suppression_plot.R`
-     .  Incidence and Viral Suppression vs Coverage: `coverage_scenarios_plot.R`
+* Code: `plotfiles.zip`     
+       Incidence: `hiv_prevalence.RData`  
+       Prevalence: `hiv_prevalence_plot.R`  
+       Viral Suppression: `viral_suppression_plot.R`  
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_plot.R`
 
 
 
