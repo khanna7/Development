@@ -1,8 +1,15 @@
-#PMTCT-models-data
+# Code for PMTCT models and data
 Repository to model PMTCT.
 
+## Statnet packages and versions
+  ```S
+   tergm_3.1.1.tar.gz  
+   ergm_3.1-0.tar.gz  
+   statnet.common_3.1-0.tar.gz  
+   statnet_3.1-0.tar.gz  
+  ```
 
-## Main Directories:
+## Main Directories
 
 ### /Development 
 * Contains the **engine** 
@@ -20,16 +27,33 @@ Repository to model PMTCT.
   * South Africa: `/params_za_d2.R`
   
 #### /Development/Uganda_Runs
-* Files and data specific to Uganda 
-* Contains `RData` file with network data 
+* Burnin file
+* Output RData file: contains network data 
+* Example of simulation
 
 #### /Development/South_Africa_Development_Runs 
-* Files and data specific to South Africa
-* Contains RData files with burnin data
+* Burnin file
+* Output RData file: contains network data 
+* Example of simulation
 
 #### /Development/Simulation_Graphics 
-* Graphics: code, datasets, output
+* Output: `plot_pdfs.zip`  
+       Incidence: `hiv_incidence_plot.pdf`  
+       Prevalence: `hiv_prevalence_plot.pdf`  
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_plot.pdf`    
+       Per cent Virally Suppressed: `viral_suppression_plot.pdf` 
 
-##### /Development/Simulation_Graphics/data
-* Data for prevalence plots: 
-* Contains `RData` file with network data 
+* Data: `data.zip`     
+       Incidence: `hiv_prevalence.RData`  
+       Prevalence: `hiv_incidence.RData`  
+       Viral Suppression: `viral_suppression.RData`  
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_data.RData`  
+
+* Code: `plotfiles.zip`     
+       Incidence: `hiv_prevalence.RData`  
+       Prevalence: `hiv_prevalence_plot.R`  
+       Viral Suppression: `viral_suppression_plot.R`  
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_plot.R`
+
+
+
