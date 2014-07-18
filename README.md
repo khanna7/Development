@@ -19,17 +19,16 @@ Repository to model PMTCT.
   * Uganda: `/params_uganda_d3.R`
   * South Africa: `/params_za_d2.R`
   
-####               /Uganda_Runs
+#### /Development/Uganda_Runs
 * Files and data specific to Uganda 
 * Contains `RData` file with network data 
 
-####              /South_Africa_Development_Runs 
+#### /Development/South_Africa_Development_Runs 
 * Files and data specific to South Africa
 * Contains RData files with burnin data
 
-####              /Simulation_Graphics 
-* Files to generate graphics for paper
-* Contains `pdf` files of plots 
+#### /Development/Simulation_Graphics 
+* Graphics: code, datasets, output
 
-#####                                  /data
+##### /Development/Simulation_Graphics/data
 
