@@ -12,7 +12,6 @@ Repository to model PMTCT.
   * `/update.treatment_d11.R`
   * `/compute.cd4.count_d3.R`
   * `/compute.viral.load_d7_d3.R`
-  * `/compute.viral.load_d7_d3.R`
   * `/assign.infectivity_d4.R`
   * `/transmission_d10.R`
 
