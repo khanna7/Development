@@ -37,10 +37,10 @@ Repository to model PMTCT.
        Per cent Virally Suppressed: `viral_suppression_plot.pdf` 
 
 * Data: `data.zip`     
-       Incidence: `hiv_prevalence.RData`
-       Prevalence: `hiv_incidence.RData`
-       Viral Suppression: `viral_suppression.RData`
-       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_data.RData`
+       Incidence: `hiv_prevalence.RData`  
+       Prevalence: `hiv_incidence.RData`  
+       Viral Suppression: `viral_suppression.RData`  
+       Incidence and Viral Suppression vs Coverage: `coverage_scenarios_data.RData`  
 
 * Code: `plotfiles.zip`     
        Incidence: `hiv_prevalence.RData`  
