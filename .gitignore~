@@ -1,0 +1,10 @@
+/data/.project_metadata
+/data/hiv_incidence.RData
+/data/hiv_prevalence.RData
+/data/viral_suppression.RData
+/log/*.log
+/out/*.out
+/out/hiv_incidence_plot.pdf
+/out/hiv_prevalence_plot.pdf
+/out/viral_suppression_plot.pdf
+/README.html
