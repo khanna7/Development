@@ -1,4 +1,4 @@
-#PMTCT-models-data
+# Code for PMTCT models and data
 Repository to model PMTCT.
 
 ## Statnet packages and versions
