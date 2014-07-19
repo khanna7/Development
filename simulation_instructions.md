@@ -16,10 +16,8 @@
      * Record initial network statistics  
      * Start with all vertices and edges active
 
-   * Specify intervention scenario (for burnin is only Option A):
-      `"baseline"` for Option A  
-      `"option.b"` for Option B
-      `"pmtct.b+"` for Option B+
+   * Specify intervention scenario:  
+      `"baseline"` for Option A (burnin is only Option A)   
 
    * Some `rm` statements follow to free memory, and garbage collect.
    
