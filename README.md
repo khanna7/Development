@@ -2,12 +2,13 @@
 Repository to model PMTCT.
 
 ## Statnet packages and versions
-  ```S
-   tergm_3.1.1.tar.gz  
-   ergm_3.1-0.tar.gz  
-   statnet.common_3.1-0.tar.gz  
-   statnet_3.1-0.tar.gz  
-  ```
+The following packages need to be installed:
+
+   [tergm_3.1.1.tar.gz](http://cran.r-project.org/src/contrib/Archive/tergm/)    
+   [ergm_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/ergm/)    
+   [network_1.9.0.tar.gz](http://cran.r-project.org/src/contrib/Archive/network/)  
+   [networkDynamic_0.4.1.tar.gz](http://cran.r-project.org/src/contrib/Archive/networkDynamic/)    
+
 
 ## Main Directories
 
@@ -16,7 +17,7 @@ Repository to model PMTCT.
   * `/common.functions_fieldingmortality_d9.R`
   * `/update.vital.dynamics_newinfected_entryage18_d13a.R`
   * `/assign.pregnancy_d8d1.R`
-  * `/update.treatmehttps://github.com/khanna7/PMTCT-models-datant_d11.R`
+  * `/update.treatment_d11.R`
   * `/compute.cd4.count_d3.R`
   * `/compute.viral.load_d7_d3.R`
   * `/assign.infectivity_d4.R`
