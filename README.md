@@ -2,12 +2,13 @@
 Repository to model PMTCT.
 
 ## Statnet packages and versions
-  ```S
-   tergm_3.1.1.tar.gz  
-   ergm_3.1-0.tar.gz  
-   statnet.common_3.1-0.tar.gz  
+The following packages need to be installed:
+
+   [tergm_3.1.1.tar.gz](http://cran.r-project.org/src/contrib/Archive/tergm/)
+   [ergm_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/ergm/)  
+   [statnet.common_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/statnet.common/)  
    [statnet_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/statnet/)  
-  ```
+
 
 ## Main Directories
 
