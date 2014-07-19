@@ -4,10 +4,10 @@ Repository to model PMTCT.
 ## Statnet packages and versions
 The following packages need to be installed:
 
-   [tergm_3.1.1.tar.gz](http://cran.r-project.org/src/contrib/Archive/tergm/)
-   [ergm_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/ergm/)  
-   [statnet.common_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/statnet.common/)  
-   [statnet_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/statnet/)  
+   [tergm_3.1.1.tar.gz](http://cran.r-project.org/src/contrib/Archive/tergm/)    
+   [ergm_3.1-0.tar.gz](http://cran.r-project.org/src/contrib/Archive/ergm/)    
+   [network_1.9.0.tar.gz](http://cran.r-project.org/src/contrib/Archive/network/)  
+   [networkDynamic_0.4.1.tar.gz](http://cran.r-project.org/src/contrib/Archive/networkDynamic/)    
 
 
 ## Main Directories
