@@ -1,8 +1,49 @@
 # Instructions to estimate models, <br/> and simulate burnin and interventions 
 
+## Estimation Routines
+   * Comments at top: history of changes
+   * Clear memory and load statnet packages
+
+   * Set up population and initialize network
+     * Formation models     
+       Uganda: 
+``` html
+                edges+b1degree(0:1)+b2(0:1)+    
+                 # num of edges + 
+                 # num of males (b1) and females (b2) with 0 and 1 degrees
+                 b1starmix(k=1,    
+                         attrname="age.cat",      
+                         base=c(age.leave.out),    
+                         diff=TRUE)+
+                 #: age-mixing matrix: specified diagonal entries
+                         b1factor("age.cat", base=c(1:2))+    
+                         b2factor("age.cat", base=c(1:2))   
+                 #: row sums for males in age categories 3 and 4`
+                 #: row sums for females in age categories 3 and 4`
+```
+  South Africa: 
+``` html
+                edges+b1(1:2)+b2degree(1:2)+    
+                # num of edges + 
+                # num of males (b1) and females (b2) with 1 and 2 degrees
+                 b1starmix(k=1,    
+                         attrname="age.cat",      
+                         base=c(age.leave.out),    
+                         diff=TRUE)+
+                 #: age-mixing matrix: specified diagonal entries
+                         b1factor("age.cat", base=c(1:2))+    
+                         b2factor("age.cat", base=c(1:2))   
+                 #: row sums for males in age categories 3 and 4`
+                 #: row sums for females in age categories 3 and 4`
+```
+
+Only difference between formation model specifications for Uganda and South Africa
+are that for Uganda number of men and women with degrees 0 and 1 are specified,
+and for South Africa number of men and women with degrees 1 and 2 are specified
+
 ## Burnin Models  
 
-   * Comments at top: History of changes  
+   * Comments at top: history of changes  
    * Clear memory and load statnet packages  
    * Load estimation object  
    * Source files from the **engine**
@@ -11,7 +52,7 @@
 
    * Set up network model  
      * Fit, formula, population features  
-     * Other Needed Parameters for timesteps
+     * Other needed parameters for timesteps
      * Set some values for time 1
      * Record initial network statistics  
      * Start with all vertices and edges active
@@ -35,7 +76,7 @@
    * Save burnin object for intervention runs
 
 ## Intervention Models
-   * Comments at top: History of changes
+   * Comments at top: history of changes
    * Clear memory and load statnet packages
    * Load burnin object
    * Source files from engine
