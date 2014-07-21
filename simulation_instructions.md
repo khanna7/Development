@@ -41,14 +41,36 @@
    * Source files from engine
   
    * Source parameters file
-   * `date` is written in format: "dateofsimulation_Country_intervention_coveragelevel_runx"
-     where     
-     : "dateofsimulation" is the date (28 Feb in this example)   
-     : "Country" is either Uganda (UG) or South Africa (ZA)  
-     : "intervention"
+     *date* is written in format: "dateofsimulation_Country_intervention_coveragelevel_runx"
+     where    
+ 
+        "dateofsimulation" is the date (28 Feb in this example)
+        "Country" is either Uganda (UG) or South Africa (ZA)  
+        "intervention": "bl" for Option A  
+                        "option.b" for Option B
+                        "pmtct.b+" for Option B+
+        
 
+   * Extract netwowork using `network.collapse(nw, last_time_of_burnin)`
    
+   * Time length of simulation: we simulate over ten years, or 260 timesteps
+
+   * Scenario: "baseline" for Option A  
+               "option.b" for Option B
+               "pmtct.b+" for Option B+
+
+   * Time-loop: as in burnin
    
+     To simulate different coverage levels
 
-
+| Coverage Level | Parameters |
+| ------ | ----------- |
+| Current ART and PMTCT   | `baseline.art.coverage.rate=baseline.art.coverage.rate` `baseline.preg.coverage.rate=baseline.preg.coverage.rate` |
+| Best PMTCT |`baseline.art.coverage.rate=baseline.art.coverage.rate`  `baseline.preg.coverage.rate=idealized.preg.coverage.rate`|
+| Best ART and PMTCT |`baseline.art.coverage.rate=idealized.art.coverage.rate`  `baseline.preg.coverage.rate=idealized.preg.coverage.rate`|
     
+       The `baseline.art.coverage.rate` argument is in the `update.vital.dynamics` and `transmission` functions. The  `baseline.preg.coverage.rate` argument is in the `update.vital.dynamics` and `transmission` functions.    
+
+      For simulating Option B, additionally, we need to replace file `update.treatment_d11.R` with `update.treatment_d12.R`. Version `d12` can also be used for simulating Options A and B+, but `d11` cannot be used for simulating Option B.
+
+    * Save object "interv.date.RData" 
