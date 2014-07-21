@@ -28,14 +28,16 @@ The following packages need to be installed:
   * South Africa: `/params_za_d2.R`
   
 #### /Development/Uganda_Runs
+* Estimation file
 * Burnin file
 * Output RData file: contains network data 
-* Example of simulation
+* Example of intervention (Option A, Current coverage)
 
 #### /Development/South_Africa_Development_Runs 
+* Estimation file
 * Burnin file
 * Output RData file: contains network data 
-* Example of simulation
+* Example of intervention (Option A, Current coverage)
 
 Instructions to run burnin and simulation models are [here.](https://github.com/khanna7/Development/blob/master/simulation_instructions.md)
 
