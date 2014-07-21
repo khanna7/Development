@@ -37,7 +37,7 @@ The following packages need to be installed:
 * Output RData file: contains network data 
 * Example of simulation
 
-Instructions to run baseline and simulation models are [here.](https://github.com/khanna7/Development/blob/master/simulation_instructions.md)
+Instructions to run burnin and simulation models are [here.](https://github.com/khanna7/Development/blob/master/simulation_instructions.md)
 
 #### /Development/Simulation_Graphics 
 * Output: `plot_pdfs.zip`  
