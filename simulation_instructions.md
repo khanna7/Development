@@ -35,3 +35,20 @@
    * Save burnin object for intervention runs
 
 ## Intervention Models
+   * Comments at top: History of changes
+   * Clear memory and load statnet packages
+   * Load burnin object
+   * Source files from engine
+  
+   * Source parameters file
+   * `date` is written in format: "dateofsimulation_Country_intervention_coveragelevel_runx"
+     where     
+     : "dateofsimulation" is the date (28 Feb in this example)   
+     : "Country" is either Uganda (UG) or South Africa (ZA)  
+     : "intervention"
+
+   
+   
+
+
+    
