@@ -1,8 +1,64 @@
 # Instructions to estimate models, <br/> and simulate burnin and interventions 
 
+## Estimation Routines
+   * Comments at top: history of changes
+   * Clear memory and load statnet packages
+
+   * Set up population and initialize network
+     * Formation models     
+       Uganda: 
+``` html
+                edges+b1degree(0:1)+b2(0:1)+    
+                 # num of edges + 
+                 # num of males (b1) and females (b2) with 0 and 1 degrees
+                 b1starmix(k=1,    
+                         attrname="age.cat",      
+                         base=c(age.leave.out),    
+                         diff=TRUE)+
+                 #: age-mixing matrix: specified diagonal entries
+                         b1factor("age.cat", base=c(1:2))+    
+                         b2factor("age.cat", base=c(1:2))   
+                 #: row sums for males in age categories 3 and 4`
+                 #: row sums for females in age categories 3 and 4`
+```
+  South Africa: 
+``` html
+                edges+b1degree(1:2)+b2degree(1:2)+    
+                # num of edges + 
+                # num of males (b1) and females (b2) with 1 and 2 degrees
+                 b1starmix(k=1,    
+                         attrname="age.cat",      
+                         base=c(age.leave.out),    
+                         diff=TRUE)+
+                 #: age-mixing matrix: specified diagonal entries
+                         b1factor("age.cat", base=c(1:2))+    
+                         b2factor("age.cat", base=c(1:2))   
+                 #: row sums for males in age categories 3 and 4`
+                 #: row sums for females in age categories 3 and 4`
+```
+
+Only difference between formation model specifications for Uganda and South Africa
+are that for Uganda number of men and women with degrees 0 and 1 are specified,
+and for South Africa number of men and women with degrees 1 and 2 are specified
+    
+   * Compute target statistics for network models from empirical data 
+   * Specify constraints (none specified, for both countries)
+   * Initialize network
+   * Add attributes (for time 0)
+     * Demographic: Sex, age, cirumcision status, age-specific fertility rate(ASFR), pregnancy status (as a function of ASFR),                     time since current pregnancy (set to 0 initially for all pregnant women), 
+                    time of last pregnancy (set to 0 initially for all pregnant women), 
+                    number of pregnancies (1 for initially pregnant women, 0 for everyone else), 
+                    
+     * Biological and treatment-related: HIV status, ART covered, PMTCT covered, time since infection (uniformly distributed between 0 and max. length of infection for untreated people), time of infection (0 - time since infection), age at infection (age - time since infection), duration of infection by age, CD4 count today (function of time since infection, age at infection, and sex),  ART status (set to 1 for those who are covered, and consistent with empirical estimate), time since ART initiation (calculted from CD4 count), ART type (combination ART initially for all on treatment), viral load (function of infection status, time since infection, ART status, and time since ART initiation)
+     
+
+   * Fit ergm model
+      
+   * Save estimation object
+   
 ## Burnin Models  
 
-   * Comments at top: History of changes  
+   * Comments at top: history of changes  
    * Clear memory and load statnet packages  
    * Load estimation object  
    * Source files from the **engine**
@@ -11,7 +67,7 @@
 
    * Set up network model  
      * Fit, formula, population features  
-     * Other Needed Parameters for timesteps
+     * Other needed parameters for timesteps
      * Set some values for time 1
      * Record initial network statistics  
      * Start with all vertices and edges active
@@ -35,7 +91,7 @@
    * Save burnin object for intervention runs
 
 ## Intervention Models
-   * Comments at top: History of changes
+   * Comments at top: history of changes
    * Clear memory and load statnet packages
    * Load burnin object
    * Source files from engine
