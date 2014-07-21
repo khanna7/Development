@@ -49,6 +49,10 @@
         "intervention": "bl" for Option A  
                         "option.b" for Option B
                         "pmtct.b+" for Option B+
+        "coveragelevel":"cp" for Current practice   
+                        "bestcasepreg" for Best PMTCT
+                        "bestcaseall" for Best ART and PMTCT
+        
         
 
    * Extract netwowork using `network.collapse(nw, last_time_of_burnin)`
