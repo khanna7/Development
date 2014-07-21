@@ -69,8 +69,9 @@
 | Best PMTCT |`baseline.art.coverage.rate=baseline.art.coverage.rate`  `baseline.preg.coverage.rate=idealized.preg.coverage.rate`|
 | Best ART and PMTCT |`baseline.art.coverage.rate=idealized.art.coverage.rate`  `baseline.preg.coverage.rate=idealized.preg.coverage.rate`|
     
-       The `baseline.art.coverage.rate` argument is in the `update.vital.dynamics` and `transmission` functions. The  `baseline.preg.coverage.rate` argument is in the `update.vital.dynamics` and `transmission` functions.    
+       The `baseline.art.coverage.rate` argument is in the `update.vital.dynamics` and `transmission` functions. The  `baseline.preg.coverage.rate` argument is in the `update.vital.dynamics` and `transmission` functions.  
+       
 
-      For simulating Option B, additionally, we need to replace file `update.treatment_d11.R` with `update.treatment_d12.R`. Version `d12` can also be used for simulating Options A and B+, but `d11` cannot be used for simulating Option B.
+   * For simulating Option B, additionally, we need to replace file `update.treatment_d11.R` with `update.treatment_d12.R`. Version `d12` can also be used for simulating Options A and B+, but `d11` cannot be used for simulating Option B.
 
-    * Save object "interv.date.RData" 
+   * Save object "interv.date.RData" 
