@@ -1,3 +1,6 @@
+## Sep 2014: Spelling error LHS said cd4.count.toda in
+## cd4.count.today <- nw%v%"cd4.count.today"
+
 ## 14 Feb 2014: I was missing condidtional 
 ## || scenario == "option.b" -- for ART coverage probabilities.
 ## Therefore, coverage status was not being assigned for Option B.
@@ -174,7 +177,7 @@
        infectivity.today <- nw %v% "infectivity.today" # ASK
        age <- nw%v%"age" #22Aug2013
        sex <- nw%v%"sex" ## 30 Oct 2013 -- more attribute inf recorded
-       cd4.count.toda <- nw%v%"cd4.count.today" ## for understanding detail about infectors
+       cd4.count.today <- nw%v%"cd4.count.today" ##Spelling error in cd4.count.today <-  ## for understanding detail about infectors
        viral.load.today <- nw%v%"viral.load.today"
        preg.status <- nw%v%"curr.pregnancy.status"
        circum.status <- nw%v%"circum.status"
