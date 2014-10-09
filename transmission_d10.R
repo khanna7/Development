@@ -221,7 +221,7 @@
        
        if (length(infectible.preg) > 0){
        infectivity.transmittable.m[infectible.preg] <-
-         infectivity.transmittable.m[infectible.preg]*preg.mult
+         infectivity.transmittable.m[infectible.preg]*preg.susc.mult
        }           ## for men with susceptible male partners, modify infectivity
 
        transmit.prob.infectible.f <- runif(length(infectible.f))
